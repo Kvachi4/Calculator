@@ -19,76 +19,187 @@ namespace Calculator
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-           listBox1.Items.Clear();
+           listBox1.Items.Clear();           
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Remove(listBox1.SelectedItem);
+            listBox1.Items.Remove(listBox1.SelectedItem);           
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            int btn1 = 1;
-            listBox1.Items.Add(btn1);  
+            Button btn1 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn1.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {   
+                inputTextString.Clear();
+                inputTextString.Append(btn1.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            int btn2 = 2;
-            listBox1.Items.Add(btn2);
+            Button btn2 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn2.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btn2.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void additionBtn_Click(object sender, EventArgs e)
         {
-            
+            Button btn = (Button)sender;
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            int btn3 = 3;
-            listBox1.Items.Add(btn3);
+            Button btn3 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn3.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btn3.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            int btn4 = 4;
-            listBox1.Items.Add(btn4);
+            Button btn4 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn4.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btn4.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            
+            Button btn5 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn5.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btn5.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            int btn6 = 6;
-            listBox1.Items.Add(btn6);
+            Button btn6 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn6.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btn6.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            int btn7 = 7;
-            listBox1.Items.Add(btn7);
+            Button btn7 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn7.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btn7.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            int btn8 = 8;
-            listBox1.Items.Add(btn8);
+            Button btn8 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn8.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btn8.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            int btn9 = 9;
-            listBox1.Items.Add(btn9);
+            Button btn9 = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btn9.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btn9.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-            int btnZero = 0;
-            listBox1.Items.Add(btnZero);
+            Button btnZero = (Button)sender;
+            StringBuilder inputTextString = new StringBuilder(inputText.Text);
+            if (!inputTextString[0].Equals('0'))
+            {
+                inputTextString.Append(btnZero.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
+            else
+            {
+                inputTextString.Clear();
+                inputTextString.Append(btnZero.Text.ToString());
+                inputText.Text = inputTextString.ToString();
+            }
         }
 
        
