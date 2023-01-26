@@ -31,7 +31,8 @@ namespace Calculator
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-                   
+                     
+                textBox1.Text.Remove(textBox1.Text.Length - 1, 1);           
         }
 
         private void btn1_Click(object sender, EventArgs e)
@@ -126,7 +127,7 @@ namespace Calculator
 
         private void equalBtn_Click(object sender, EventArgs e)
         {
-            StringBuilder inputTextString = new StringBuilder(textBox1.Text);
+            //StringBuilder inputTextString = new StringBuilder(textBox1.Text);
             
 
             operand2 = input;
@@ -198,5 +199,7 @@ namespace Calculator
             operand1 = input;
             operation = '%';
         }
+
+       
     }
 }
