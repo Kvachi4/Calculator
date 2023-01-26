@@ -289,6 +289,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.Honeydew;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(13, 26);
             this.textBox1.Multiline = true;
@@ -303,7 +304,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(404, 420);
+            this.ClientSize = new System.Drawing.Size(402, 420);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelL);
             this.Controls.Add(this.equalBtn);
