@@ -47,9 +47,8 @@
             this.divisionBtn = new System.Windows.Forms.Button();
             this.remainderBtn = new System.Windows.Forms.Button();
             this.equalBtn = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.labelL = new System.Windows.Forms.Label();
-            this.inputText = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ClearBtn
@@ -148,6 +147,7 @@
             this.subtractionBtn.TabIndex = 0;
             this.subtractionBtn.Text = "-";
             this.subtractionBtn.UseVisualStyleBackColor = false;
+            this.subtractionBtn.Click += new System.EventHandler(this.subtractionBtn_Click);
             // 
             // btn4
             // 
@@ -172,6 +172,7 @@
             this.multiplicationBtn.TabIndex = 0;
             this.multiplicationBtn.Text = "X";
             this.multiplicationBtn.UseVisualStyleBackColor = false;
+            this.multiplicationBtn.Click += new System.EventHandler(this.multiplicationBtn_Click);
             // 
             // btn5
             // 
@@ -248,6 +249,7 @@
             this.divisionBtn.TabIndex = 0;
             this.divisionBtn.Text = "/";
             this.divisionBtn.UseVisualStyleBackColor = false;
+            this.divisionBtn.Click += new System.EventHandler(this.divisionBtn_Click);
             // 
             // remainderBtn
             // 
@@ -259,6 +261,7 @@
             this.remainderBtn.TabIndex = 0;
             this.remainderBtn.Text = "%";
             this.remainderBtn.UseVisualStyleBackColor = false;
+            this.remainderBtn.Click += new System.EventHandler(this.remainderBtn_Click);
             // 
             // equalBtn
             // 
@@ -270,18 +273,7 @@
             this.equalBtn.TabIndex = 1;
             this.equalBtn.Text = "=";
             this.equalBtn.UseVisualStyleBackColor = false;
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.Honeydew;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(13, 416);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.listBox1.Size = new System.Drawing.Size(371, 29);
-            this.listBox1.TabIndex = 3;
+            this.equalBtn.Click += new System.EventHandler(this.equalBtn_Click);
             // 
             // labelL
             // 
@@ -294,17 +286,16 @@
             this.labelL.TabIndex = 5;
             this.labelL.Text = "ლაშას კალკულატორი";
             // 
-            // inputText
+            // textBox1
             // 
-            this.inputText.BackColor = System.Drawing.Color.Honeydew;
-            this.inputText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputText.Location = new System.Drawing.Point(13, 26);
-            this.inputText.Multiline = true;
-            this.inputText.Name = "inputText";
-            this.inputText.Size = new System.Drawing.Size(373, 84);
-            this.inputText.TabIndex = 6;
-            this.inputText.Text = "0";
-            this.inputText.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.BackColor = System.Drawing.Color.Honeydew;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(13, 26);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(373, 84);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Calculator
             // 
@@ -312,10 +303,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(401, 459);
-            this.Controls.Add(this.inputText);
+            this.ClientSize = new System.Drawing.Size(404, 420);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.labelL);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.equalBtn);
             this.Controls.Add(this.additionBtn);
             this.Controls.Add(this.DeleteBtn);
@@ -335,6 +325,7 @@
             this.Controls.Add(this.btn7);
             this.Controls.Add(this.ClearBtn);
             this.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -365,9 +356,8 @@
         private System.Windows.Forms.Button divisionBtn;
         private System.Windows.Forms.Button remainderBtn;
         private System.Windows.Forms.Button equalBtn;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label labelL;
-        private System.Windows.Forms.TextBox inputText;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
